@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F5F7FA;
+}
+h1{
+    font-family: Inter,sans-serif;
+    color: #079211;
+    margin: 0;
+    font-weight: bolder;
+    font-size: 44.55px;
+}
+.top-right-nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.top-right-nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+    font-weight: inherit;
+}
+h1#a2 {
+    color: #4D4D4D;
+    font-size: 88px;
+    margin: 0;
+    margin-left: 50px;
+
+}
+h2#a1 {
+    color: #069211;
+    font-size: 38px;
+    margin: 0;
+    margin-left: 50px;
+}
+p#a3 {
+    color: #808080;
+    font-size: 16px;
+    font-weight: inherit;
+    margin-left: 50px;
+}
+
+h2#a4 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-left: 50px;
+
+}
+#a4 {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Ensures the box size fits its content */
+}
+#a5 {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Ensures the box size fits its content */
+}
+.about-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#a6{
+    margin-right: 200px;
+
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 800px; /* Adjust max-width as needed */
+    margin-top: 20px; /* Adjust margin-top as needed */
+    margin-right: 350px; /* Add margin to move it to the right */
+    color: #717171;
+    font-size: 14px;
+}
+.about-details {
+    flex: 1;
+    margin-left: 70px;
+}
+
+#a7 {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Ensures the box size fits its content */
+}
+h1#Skill{
+    align-items: center;
+    text-align: center;
+}
+.skills-container1 {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items at the start vertically */
+}
+
+.skill-box1 {
+    width: 250px;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-box1 h4 {
+    margin: 5px 0;
+}
+
+.skill-box1 h2 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.skill-box1 h5 {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #999;
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #069211;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+
+.skill-per{
+    height: 14px;
+    background: #069211;
+    border-radius: 3px;
+    position: revert;
+    animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after{
+content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars {
+    form{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
