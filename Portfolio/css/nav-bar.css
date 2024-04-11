@@ -1,0 +1,13 @@
+.top-right-nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.top-right-nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+    font-weight: inherit;
+}

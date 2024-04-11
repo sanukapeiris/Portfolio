@@ -8,19 +8,43 @@
     <meta name="author" content=" Sanuka Mihijaya Peiris">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanuka Peiris</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/nav-bar.css">
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/About.css">
+    <link rel="stylesheet" href="../css/Skill.css">
+    <link rel="stylesheet" href="../css/Projects.css">
+    <link rel="stylesheet" href="../css/Services.css">
+    <link rel="stylesheet" href="../css/Contact.css">
 
-    <div class="top-right-nav">
-        <a href="#Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#Skill">Skill</a>
-        <a href="#Project">Project</a>
-        <a href="#Services">Services</a>
-        <a id="a5" href="#Contact">Contact</a>
-    </div>
+
+
 
 </head>
 <body>
+<!--===== HEADER =====-->
+<header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#" class="nav__logo">Sanuka Peiris</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#Home" class="nav__link active-link">Home</a></li>
+                <li class="nav__item"><a href="#About" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#Skill" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#Project" class="nav__link">Projects </a></li>
+                <li class="nav__item"><a href="#Services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#Contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
 
 <div>
     <img width="100" height="100" src="../assets/images/d-removebg-preview.png">
@@ -34,34 +58,33 @@
     <p id="a3">Sri Lankan student at Lyceum International School Panadura, <br>currently studying at IJSE (Institute of Software Engineering).<br> Aspiring Software Engineer.</p>
     <h2 id="a4">Email Me</h2>
 </div>
+<br><br><br><br>
+<!--===== ABOUT =====-->
+<section class="about section " id="About">
+    <h2 class="section-title">About</h2>
 
-<div class="about-container1">
-    <h1 class="about-title" id="About">About Me</h1>
-    <br><br>
-    <div class="about-content">
-        <img id="a6" style="height: 435px;width: 435px" src="../assets/images/WhatsApp Image 2024-03-26 at 14.12.00_470d2485.jpg">
-        <div class="about-details">
-            <h3>Name: Sanuka Mihijaya Peiris</h3>
-            <h3>Date of birth: August 13, 2007</h3>
-            <h3>Address: No 82 kosswatha walana panadura</h3>
-            <h3>Zip code: 1500</h3>
-            <h3>Email: sanukapeiris283@gmail.com</h3>
-            <h3>Phone: +94 72 836 0183</h3>
-            <h3 id="a7">Download Cv</h3>
+    <div class="about__container bd-grid">
+        <div class="about__img">
+            <img src="../assets/images/WhatsApp%20Image%202024-03-26%20at%2014.12.00_470d2485.jpg" alt="">
+        </div>
 
+        <div>
+            <h2 class="about__subtitle">I'am Sanuka Mihijaya Peiris</h2>
+            <p class="about__text">Welcome to my corner of the web! I'm Sanuka Mihijaya Peiris, a 16-year-old from Sri Lanka. Living amidst the rich culture and stunning landscapes of my homeland has fueled my curiosity and shaped my perspective. Whether it's delving into literature, exploring science, or expressing myself through art, I'm always eager to learn and grow. Join me on this journey of discovery as we navigate life's adventures together. Thanks for stopping by!</p>
         </div>
     </div>
-</div>
-<br><br><br><br><br><br><br><br>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 <div>
 
-    <h1 id="Skill">Skills</h1>
+    <h1 class="section-title" id="Skill">Skills</h1>
     <div class="skills-container1">
         <div class="skill-box1">
             <h4>Java</h4>
             <h2>100</h2>
             <h5>60% Daily Goal</h5>
             <h5>75% This week</h5>
+
         </div>
 
         <div class="skill-box1">
@@ -77,72 +100,96 @@
             <h5>60% Daily Goal</h5>
             <h5>75% This week</h5>
         </div>
+
     </div>
 
 
-    <br>
-    <br>
+    <br><br>
 
-    <div class="skill">
-        <div class="skills">
-            <div class="skill-name">Java</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="90%" style="max-width: 90%"></div>
+    <div class="skills__container bd-grid">
+        <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-html5 skills__icon'></i>
+                    <span class="skills__name">HTML5</span>
+                </div>
+                <div class="skills__bar skills__html">
+
+                </div>
+                <div>
+                    <span class="skills__percentage">95%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-css3 skills__icon'></i>
+                    <span class="skills__name">CSS3</span>
+                </div>
+                <div class="skills__bar skills__css">
+
+                </div>
+                <div>
+                    <span class="skills__percentage">85%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxl-javascript skills__icon' ></i>
+                    <span class="skills__name">JAVASCRIPT</span>
+                </div>
+                <div class="skills__bar skills__js">
+
+                </div>
+                <div>
+                    <span class="skills__percentage">65%</span>
+                </div>
+            </div>
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxs-paint skills__icon'></i>
+                    <span class="skills__name">UX/UI</span>
+                </div>
+                <div class="skills__bar skills__ux">
+
+                </div>
+                <div>
+                    <span class="skills__percentage">85%</span>
+                </div>
             </div>
         </div>
 
-        <div class="skills">
-            <div class="skill-name">HTML</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="90%" style="max-width: 90%"></div>
-            </div>
-        </div>
-
-        <div class="skills">
-            <div class="skill-name">css</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="90%" style="max-width: 90%"></div>
-            </div>
-        </div>
-
-        <div class="skills">
-            <div class="skill-name">JQuery</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="90%" style="max-width: 90%"></div>
-            </div>
-        </div>
-
-        <div class="skills">
-            <div class="skill-name">Wordpress</div>
-            <div class="skill-bar">
-                <div class="skill-per" per="90%" style="max-width: 90%"></div>
-            </div>
+        <div>
+            <img src="assets/img/work3.jpg" alt="" class="skills__img">
         </div>
     </div>
 
-    <h4>java</h4>
-    <h4>100</h4>
-    <h4>Html</h4>
-    <h4>100</h4>
-    <h4>css</h4>
-    <h4>100</h4>
-    <h4>jQuery</h4>
-    <h4>60</h4>
-    <h4>wordpress</h4>
-    <h4>75</h4>
 </div>
-<div>
-    <img src="../assets/images/WhatsApp%20Image%202024-03-01%20at%209.28.33%20PM.jpeg">
-    <h2>Education</h2>
-    <h4>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta </h4>
-    <img src="../assets/images/WhatsApp%20Image%202024-03-01%20at%209.29.34%20PM.jpeg">
-    <h2>Experience</h2>
-    <h4>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta </h4>
-    <img src="../assets/images/WhatsApp%20Image%202024-03-01%20at%209.29.40%20PM.jpeg">
-    <h2>Awards</h2>
-    <h4>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta </h4>
+<div class="container">
+    <div class="section">
+        <img src="../assets/images/WhatsApp%20Image%202024-03-01%20at%209.28.33%20PM.jpeg">
+        <div class="text">
+            <h2>Education</h2>
+            <h4>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta</h4>
+        </div>
+    </div>
+    <div class="section">
+        <img src="../assets/images/WhatsApp%20Image%202024-03-01%20at%209.29.34%20PM.jpeg">
+        <div class="text">
+            <h2>Experience</h2>
+            <h4>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta</h4>
+        </div>
+    </div>
+    <div class="section">
+        <img src="../assets/images/WhatsApp%20Image%202024-03-01%20at%209.29.40%20PM.jpeg">
+        <div class="text">
+            <h2>Awards</h2>
+            <h4>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta</h4>
+        </div>
+    </div>
+</div>
 
-</div>
 <div>
     <h1 id="Project">Projects</h1>
     <img src="../assets/images/WhatsApp%20Image%202024-03-01%20at%209.31.08%20PM.jpeg">
@@ -201,7 +248,10 @@
     <h6>your email address</h6>
 
 </div>
+<!--===== SCROLL REVEAL =====-->
+<script src="https://unpkg.com/scrollreveal"></script>
 
-</svg>
+<!--===== MAIN JS =====-->
+<script src="../js/main.js"></script>
 </body>
 </html>
