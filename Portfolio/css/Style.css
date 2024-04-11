@@ -298,3 +298,21 @@ img {
         width: 450px;
     }
 }
+
+.nav__toggle {
+    color: var(--second-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Add transition effect */
+}
+
+.nav__toggle:hover {
+    color: var(--first-color);
+}
+.nav__toggle.active .bx-menu {
+    display: none;
+}
+
+.nav__toggle.active .bx-x {
+    display: block;
+}

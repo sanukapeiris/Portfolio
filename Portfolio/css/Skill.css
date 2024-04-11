@@ -90,3 +90,25 @@ h1#Skill{
 .skills__img {
     border-radius: 0.5rem;
 }
+.Skill__img img {
+    width: 300px;
+}
+.Skill1__container {
+    padding-top: 2rem;
+}
+.Skill1__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+}
+.info__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+}
+.info__container {
+    padding-top: 2rem;
+}
+.info__img img {
+    width: 300px;
+}
