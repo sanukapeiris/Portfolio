@@ -1,0 +1,23 @@
+/* Services section styles */
+
+#Services {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#Services h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#Services h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+}
+
+#Services h5 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
