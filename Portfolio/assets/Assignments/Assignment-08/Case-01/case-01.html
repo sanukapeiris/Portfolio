@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Queue-case 01</title>
+
+    <style>
+        body{
+            background: #E9E7E6;
+        }
+        section{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .queue-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 2px solid #afafaf;
+        }
+
+        .queue-container div img{
+            width: 150px;
+        }
+
+        .queue-container div div{
+            text-align: right;
+            font-size: 24px;
+            font-weight: 600;
+            color: darkcyan;
+        }
+
+        .house img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div class="queue-container">
+        <div class="item">
+            <div>A</div>
+            <img src="img/man.gif" alt="man">
+        </div>
+        <div class="item">
+            <div>B</div>
+            <img src="img/man.gif" alt="man">
+        </div>
+        <div class="item">
+            <div>C</div>
+            <img src="img/man.gif" alt="man">
+        </div>
+        <div class="item">
+            <div>D</div>
+            <img src="img/man.gif" alt="man">
+        </div>
+        <div class="item">
+            <div>E</div>
+            <img src="img/man.gif" alt="man">
+        </div>
+        <div class="item">
+            <div>F</div>
+            <img src="img/man.gif" alt="man">
+        </div>
+    </div>
+    <div class="house">
+        <img src="img/house.gif" alt="house">
+    </div>
+</section>
+
+
+<script src="jquery.min.js"></script>
+
+<script>
+    const items = $('.item div');
+    setInterval(() => {
+        let one = items.eq(0).html();
+        let two = items.eq(1).html();
+        let three = items.eq(2).html();
+        let four = items.eq(3).html();
+        let five = items.eq(4).html();
+        let six = items.eq(5).html();
+
+        items.eq(0).html(six);
+        items.eq(1).html(one);
+        items.eq(2).html(two);
+        items.eq(3).html(three);
+        items.eq(4).html(four);
+        items.eq(5).html(five);
+
+    }, 1000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-03</title>
+    <link rel="stylesheet" href="../../../normalize/normalize.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+
+    <style>
+        body{
+            overflow: hidden;
+        }
+        :root{
+            --width: 200px;
+            --height: 100px;
+        }
+        div{
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            animation-name: anime;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            background-color: red;
+        }
+        @keyframes anime {
+            0%{
+                margin-top: 0px;
+                margin-left: 0px;
+                background-color: red;
+            }
+            25%{
+                margin-left: calc(100vw - var(--width));
+                margin-top: 0px;
+                background-color: aquamarine;
+                transform: rotate(180deg);
+            }
+            50%{
+                margin-left: calc(100vw - var(--width));
+                margin-top: calc(100vh - var(--height));
+                background-color: lightcoral;
+                transform: rotate(0deg);
+            }
+            75%{
+                margin-top: calc(100vh - var(--height));
+                margin-left: 0px;
+                background-color: chartreuse;
+                transform: rotate(-180deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div></div>
+
+</body>
+</html>

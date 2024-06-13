@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KITT Light Theme</title>
+
+    <style>
+        section{
+            text-align: center;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+        }
+        #lights>div{
+            height: 30px;
+            width: 100px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        .light-on{
+            background: red;
+        }
+        .trailing-light1{
+            background: brown;
+        }
+    </style>
+
+
+</head>
+<body>
+<section id="lights">
+    <div id="value1" class="light"></div>
+    <div id="value2" class="light"></div>
+    <div id="value3" class="light"></div>
+    <div id="value4" class="light"></div>
+    <div id="value5" class="light"></div>
+</section>
+
+<section>
+    <button id="startbtn">start</button>
+    <button id="stopbtn">stop</button>
+</section>
+
+<audio id="audio" src="assets/audio.mp3"></audio>
+
+<script src="assets/jquery-3.7.1.min.js"></script>
+
+<script>
+    var current_light_index = -1;
+    var max_light_count = 5;
+    var move = "RIGHT"; //RIGHT or LEFT
+    function updateLightPanel(){
+        $(".light").removeClass("light-on");
+        /*$(".light").eq(current_light_index).addClass("light-on");*/
+        $(".light").removeClass("trailing-light1");
+
+        if (move=="RIGHT"){
+            ++current_light_index;
+            $(".light").eq(current_light_index).addClass("light-on");
+            if (current_light_index-1>=0){
+                $(".light").eq(current_light_index-1).addClass("trailing-light1");
+            }
+
+            if(current_light_index===max_light_count-1) {
+                move = "LEFT";
+            }
+        }
+        else{
+            --current_light_index;
+            $(".light").eq(current_light_index).addClass("light-on");
+            if(current_light_index<max_light_count){
+                $(".light").eq(current_light_index+1).addClass("trailing-light1");
+            }
+            if(current_light_index===0){
+                move = "RIGHT";
+            }
+        }
+    }
+
+    $("#startbtn").on('click', function (){
+        my_interval = setInterval(updateLightPanel,100);
+        $('#audio')[0].play();
+    });
+    $("#stopbtn").on('click', function (){
+        clearInterval(my_interval);
+        $('#audio')[0].pause();
+    });
+
+</script>
+</body>
+</html>

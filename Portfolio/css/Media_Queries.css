@@ -133,3 +133,28 @@
 .nav__toggle.active .bx-x {
     display: block;
 }
+
+#assignment .assignment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#assignment .card {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+/* Tablet styles for Assignments */
+@media (max-width: 991px) {
+    #assignment .card {
+        width: 45%;
+    }
+}
+
+/* Phone styles for Assignments */
+@media (max-width: 767px) {
+    #assignment .card {
+        width: 100%;
+    }
+}

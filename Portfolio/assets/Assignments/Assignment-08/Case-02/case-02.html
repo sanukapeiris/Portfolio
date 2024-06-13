@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Queue-case 02</title>
+    <style>
+        body{
+            background-color: darkslategray;
+            font-family: sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            color: #B3BEC4;
+        }
+
+        section{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            width: 50%;
+            height: 36vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sub_container{
+            width: 100%;
+            border-bottom: #B3BEC4 3px solid;
+            display: flex;
+        }
+
+        .sub_container:nth-child(2){
+            justify-content: center;
+        }
+
+        .sub_container:nth-child(3){
+            flex-direction: row-reverse;
+            border-bottom: none;
+        }
+
+        .color{
+            width: 100px;
+            height: 8vh;
+            margin: 10px;
+            background-color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div class="container">
+        <div class="sub_container">
+            <div class="color"></div>
+        </div>
+        <div class="sub_container">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </div>
+        <div class="sub_container">
+            <div class="color"></div>
+        </div>
+    </div>
+</section>
+
+<script src="../Case-01/jquery.min.js"></script>
+
+<script>
+    let color = ['red','green','blue','yellow','purple','pink'];
+    let items = $('.color');
+
+    for (let i = 0; i<items.length; i++){
+        items.eq(i).css('background',color[i]);
+    }
+
+    setInterval(() => {
+
+        color = [color[5],color[0],color[1],color[2],color[3],color[4]];
+
+        for (let i = 0; i<items.length; i++){
+            items.eq(i).css('background',color[i]);
+        }
+
+    },1000);
+</script>
+
+</body>
+</html>
